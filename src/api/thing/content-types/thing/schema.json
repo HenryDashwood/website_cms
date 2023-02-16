@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "things",
+  "info": {
+    "singularName": "thing",
+    "pluralName": "things",
+    "displayName": "Thing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}
