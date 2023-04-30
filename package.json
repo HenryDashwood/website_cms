@@ -1,7 +1,7 @@
 {
   "name": "website-cms",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -10,10 +10,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.6.1",
-    "@strapi/plugin-users-permissions": "4.6.1",
-    "@strapi/strapi": "4.6.1",
-    "better-sqlite3": "8.0.1",
+    "@strapi/plugin-i18n": "4.10.1",
+    "@strapi/plugin-users-permissions": "4.10.1",
+    "@strapi/strapi": "4.10.1",
+    "better-sqlite3": "8.3.0",
     "pg": "^8.9.0",
     "pg-connection-string": "^2.5.0",
     "strapi-plugin-slugify": "^2.3.2"
