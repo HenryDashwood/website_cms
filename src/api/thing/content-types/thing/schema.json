@@ -21,7 +21,9 @@
       "type": "richtext"
     },
     "slug": {
-      "type": "string"
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
