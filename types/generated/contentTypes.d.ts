@@ -728,39 +728,6 @@ export interface ApiTagTag extends Schema.CollectionType {
   };
 }
 
-export interface ApiThingThing extends Schema.CollectionType {
-  collectionName: 'things';
-  info: {
-    singularName: 'thing';
-    pluralName: 'things';
-    displayName: 'Thing';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required & Attribute.Unique;
-    content: Attribute.RichText;
-    slug: Attribute.UID<'api::thing.thing', 'title'> & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::thing.thing',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::thing.thing',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -779,7 +746,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::post.post': ApiPostPost;
       'api::tag.tag': ApiTagTag;
-      'api::thing.thing': ApiThingThing;
     }
   }
 }
