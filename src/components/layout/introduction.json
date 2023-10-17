@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_introductions",
+  "info": {
+    "displayName": "introduction",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
